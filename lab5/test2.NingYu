@@ -1,0 +1,9 @@
+
+int main(){
+    int i;
+    char j;
+    char[3] ch;
+    break;
+    continue;
+    return j;
+}

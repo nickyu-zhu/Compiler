@@ -1,0 +1,51 @@
+int[9] array_1;
+int[6] array_2;
+int[5] array_3;
+
+int func1(int i, int j){
+    int z;
+    char ch;
+    z = i + j;
+    return z;
+    return ch;              // 16 函数返回值类型不匹配
+                            // 17 return 数量不匹配
+}
+
+int main(){
+    int i;
+    char ch;
+    
+    ch = 'B';           
+     j = 1;                 // 1 未定义变量
+     func1 = 1;           // 5 函数名的非函数使用
+     i = array_1(1,2);       // 4 非函数名的函数使用
+     i = func2(1,2);    // 2 未定义函数
+     
+     i++ = 1;               // 12 赋值号左边是非左值表达式
+     int i;                 // 3 变量重复定义 
+
+     i++++;                 // 13 对非左值表达式进行自加减 
+    
+
+    for(i=0;i<3;i++){
+        array_1[i] = i;
+    }
+
+    i = 0;
+    
+     continue;              // 19 continue位置错误
+     break;                 // 18 break位置错误
+
+    for(i=0;i<2;i++){
+        array_3[i] = func1(array_1[i], array_2[i]);
+         i = func1(ch, array_2[i]);    // 7 函数参数类型不匹配
+         i = func1(array_2[i]);        // 6 函数参数数量不匹配
+         
+    }
+    
+    while(i<2){
+        array_2[i] = i+1;
+    }
+     
+    return 0;
+}

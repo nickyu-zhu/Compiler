@@ -1,0 +1,25 @@
+int func(){
+    int j;
+    j=0;
+    return j;
+}
+
+int func_2(int i, int j){
+    
+    int k;
+    k = i + j;
+    return k;   
+	
+}
+
+int main(){
+    int zny,a;
+    for(zny=0;zny<100;zny++){
+        int a;
+        int a;
+    }
+    func();
+    func_2(zny,a);
+    
+    return 0;
+}

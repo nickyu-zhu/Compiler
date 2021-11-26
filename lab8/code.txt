@@ -1,0 +1,41 @@
+BLOCK block1 :
+FUNCTION fibonacci
+PARAM v2
+PARAM v3
+temp1 = v2 + v3
+v4 = temp1
+RETURN v4
+BLOCK block2 :
+LABEL label1 :
+FUNCTION main
+temp2 = 1
+v6 = temp2
+temp3 = 1
+v7 = temp3
+temp4 = CALL read
+v8 = temp4
+v8 = v8
+temp6 = 0
+IF v8 > temp6 GOTO label7
+BLOCK block3 :
+GOTO label6
+BLOCK block4 :
+LABEL label8 :
+temp5 = 1
+v8 = v8 - temp5
+LABEL label7 :
+ARG v6
+ARG v7
+temp8 = CALL fibonacci
+v6 = temp8
+ARG v6
+CALL  write
+temp10 = v6 - v7
+v7 = temp10
+GOTO label8
+BLOCK block5 :
+LABEL label6 :
+temp11 = 0
+RETURN temp11
+BLOCK block6 :
+LABEL label2 :

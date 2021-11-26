@@ -1,0 +1,12 @@
+BLOCK block1 : 
+FUNCTION main 
+v2 = 1 
+temp3 = v2 * 4 
+v2 = temp3 
+v3 = 4 
+v3 = v3 + 1 
+temp7 = v3 * 5 
+v3 = temp7 
+RETURN 0 
+BLOCK block2 : 
+LABEL label1 : 

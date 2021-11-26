@@ -1,0 +1,23 @@
+int fibonacci(int a, int b){
+    int c = a + b;
+    return c;
+}
+
+int main(){
+    int i;
+    int j;
+    
+    int total;
+
+    i = 1;
+    j = 1;
+    total = read();
+
+    for(total = total; total > 0; total--){
+        i = fibonacci(i,j);
+        write(i);
+        j = i - j;
+    }
+
+    return 0;
+}
